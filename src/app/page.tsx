@@ -1,7 +1,17 @@
 "use client";
 /* eslint-disable @typescript-eslint/no-explicit-any */
 // pages/_app.js
-import { Box, ChakraProvider, Text, Flex } from "@chakra-ui/react";
+import {
+  Box,
+  ChakraProvider,
+  Text,
+  Flex,
+  AspectRatio,
+  Button,
+  Wrap,
+  VStack,
+  HStack,
+} from "@chakra-ui/react";
 import Lenis from "lenis";
 import { useEffect } from "react";
 import Navbar from "@/components/Navbar";
@@ -154,6 +164,124 @@ export default function Home() {
               REAL FRUIT
             </Text>
           </Flex>
+          <Box>
+            <Flex
+              flexDir="row"
+              alignItems="flex-start"
+              justifyContent="center"
+              mt="10%"
+            >
+              <Box flex="1">
+                <Text
+                  fontSize="4vw"
+                  fontWeight="extrabold"
+                  lineHeight="0.9"
+                  color="#E3C993"
+                >
+                  NO SUGAR <br />
+                  ADDED
+                </Text>
+              </Box>
+              <Box flex="1">
+                <Text
+                  fontSize="4vw"
+                  fontWeight="extrabold"
+                  lineHeight="0.9"
+                  color="#E3C993"
+                >
+                  NO <br />
+                  ARTIFICIAL <br />
+                  COLOUR & <br />
+                  FALVOURS
+                </Text>
+              </Box>
+              <Box flex="1">
+                <Text
+                  fontSize="4vw"
+                  fontWeight="extrabold"
+                  lineHeight="0.9"
+                  color="#E3C993"
+                >
+                  USE REFINED <br />
+                  COCONUT <br />
+                  OIL
+                </Text>
+              </Box>
+            </Flex>
+          </Box>
+          <Box>
+            <Flex
+              flexDir="row"
+              alignItems="center"
+              justifyContent="center"
+              mt="10%"
+            >
+              <Box flex="1">
+                <Text
+                  fontSize="6vw"
+                  fontWeight="extrabold"
+                  lineHeight="0.9"
+                  color="#E5DFC7"
+                >
+                  SELL IT <br />
+                  WITH YOUR <br />
+                  OWN BRAND
+                </Text>
+                <Button
+                  mt="40px"
+                  variant="solid"
+                  bg="#E1D7BC"
+                  color="#421e1d"
+                  _hover={{ bg: "#d0c3a9" }}
+                  borderRadius="full"
+                >
+                  Request Sample
+                </Button>
+              </Box>
+              <Box flex="1">
+                <AspectRatio maxW="523px" ratio={4 / 3}>
+                  <iframe
+                    title="naruto"
+                    src="https://www.youtube.com/embed/QhBnZ6NPOY0"
+                    allowFullScreen
+                  />
+                </AspectRatio>
+              </Box>
+            </Flex>
+          </Box>
+          <Box>
+            <HStack spacing="30px" justify="center" mt="10%">
+              <Text
+                flex="1"
+                fontSize="2vw"
+                fontWeight="extrabold"
+                lineHeight="0.9"
+                color="#E3C993"
+                textAlign="right"
+              >
+                INSTAGRAM <br />
+                hello@retrux.com
+              </Text>
+              <Text
+                flex="1"
+                fontSize="2vw"
+                fontWeight="extrabold"
+                lineHeight="0.9"
+                color="#E3C993"
+              >
+                TIKTOK <br />
+                +6285102345
+              </Text>
+            </HStack>
+          </Box>
+          <VStack py="10%" alignItems="start" justifyContent="start">
+            <Text fontSize="24vw" lineHeight="0.9" fontWeight="extrabold" color="#E3C993">
+              CHIPSY
+            </Text>
+            <Text fontSize="24vw" lineHeight="0.9" fontWeight="extrabold" transform="rotate(-6deg)" color="#E3C993">
+              CHIPS
+            </Text>
+          </VStack>
         </Box>
       </>
     </ChakraProvider>
