@@ -6,15 +6,16 @@ import {
   ChakraProvider,
   Text,
   Flex,
-  AspectRatio,
+  Image,
   Button,
-  Wrap,
   VStack,
   HStack,
+  Heading,
 } from "@chakra-ui/react";
 import Lenis from "lenis";
 import { useEffect } from "react";
 import Navbar from "@/components/Navbar";
+import theme from "@/constants/theme";
 
 export default function Home() {
   useEffect(() => {
@@ -33,7 +34,7 @@ export default function Home() {
     requestAnimationFrame(raf);
   });
   return (
-    <ChakraProvider>
+    <ChakraProvider theme={theme}>
       <>
         <Box bg="#300D0D" w="100%" py="8" px="12">
           <Navbar />
@@ -43,17 +44,17 @@ export default function Home() {
             justifyContent="center"
             mt="8%"
           >
-            <Text
-              align="center"
-              lineHeight="8vw"
-              fontSize="10vw"
+            <Heading
+              textAlign="center"
+              lineHeight="11vw"
+              fontSize="12vw"
               color="#E3C993"
-              fontWeight="bold"
+              fontWeight="regular"
             >
               EMPOWERING <br />
               FARMERS <br />
               REDUCING WASTE
-            </Text>
+            </Heading>
           </Flex>
           <Flex
             flexDir="row"
@@ -62,79 +63,84 @@ export default function Home() {
             mt="10%"
           >
             <Box flex="2">
-              <Text
+              <Heading
                 fontSize="6vw"
-                fontWeight="extrabold"
-                lineHeight="0.9"
+                fontWeight="medium"
+                lineHeight="5.5vw"
                 color="#300D0D"
-                textShadow="0 0 2.5px #E3C993, 0 0 2.5px #E3C993"
+                textShadow="0 0 2.5px #E5DFC7, 0 0 2.5px #E5DFC7"
               >
                 FIRST MOVER <br />
                 NO SULFITE <br />
                 CHIPS
-              </Text>
-              <Text
+              </Heading>
+              <Heading
                 fontSize="6vw"
-                fontWeight="extrabold"
-                lineHeight="0.9"
+                fontWeight="medium"
+                lineHeight="5.5vw"
                 color="#E5DFC7"
               >
                 INTERNATIONAL <br />
                 CERTIFICATION <br />
-              </Text>
-              <Text
+              </Heading>
+              <Heading
                 fontSize="6vw"
-                fontWeight="extrabold"
-                lineHeight="0.9"
+                fontWeight="medium"
+                lineHeight="5.5vw"
                 color="#300D0D"
-                textShadow="0 0 2.5px #E3C993, 0 0 2.5px #E3C993"
+                textShadow="0 0 2.5px #E5DFC7, 0 0 2.5px #E5DFC7"
               >
                 FOR FOOD SAFETY
-              </Text>
+              </Heading>
             </Box>
             <Box flex="1">
               <Box>
-                <Text
+                <Heading
                   fontSize="6vw"
-                  fontWeight="extrabold"
+                  fontWeight="medium"
                   lineHeight="1"
                   color="#E3C993"
                 >
                   80ºC
-                </Text>
+                </Heading>
                 <Text fontSize="1vw" lineHeight="1" color="#E3C993">
                   Low temperature <br />
                   processing
                 </Text>
               </Box>
               <Box>
-                <Text
+                <Heading
                   fontSize="6vw"
-                  fontWeight="extrabold"
+                  fontWeight="medium"
                   lineHeight="1"
                   color="#E3C993"
                   mt="2vw"
                 >
                   8Y
-                </Text>
+                </Heading>
                 <Text fontSize="1vw" lineHeight="1" color="#E3C993">
-                  Researh &<br />
+                  Research &<br />
                   Development
                   <br />
                   the tech
                 </Text>
               </Box>
               <Box>
-                <Text
+                <Heading
                   fontSize="6vw"
-                  fontWeight="extrabold"
+                  fontWeight="medium"
                   lineHeight="1"
                   color="#E3C993"
                   mt="2vw"
                 >
                   5%
-                </Text>
-                <Text fontSize="1vw" lineHeight="1" color="#E3C993">
+                </Heading>
+                <Text
+                  fontWeight="normal"
+                  fontSize="1vw"
+                  lineHeight="1"
+                  color="#E3C993"
+                >
                   Oil Content
                 </Text>
               </Box>
@@ -146,23 +152,23 @@ export default function Home() {
             justifyContent="center"
             mt="10%"
           >
-            <Text
+            <Heading
               fontSize="9vw"
-              fontWeight="extrabold"
+              fontWeight="medium"
               lineHeight="0.9"
               color="#E5DFC7"
             >
               100%
-            </Text>
-            <Text
+            </Heading>
+            <Heading
               fontSize="9vw"
-              fontWeight="extrabold"
+              fontWeight="medium"
               lineHeight="0.9"
               color="#300D0D"
-              textShadow="0 0 2.5px #E3C993, 0 0 2.5px #E3C993"
+              textShadow="0 0 2.5px #E5DFC7, 0 0 2.5px #E5DFC7"
             >
               REAL FRUIT
-            </Text>
+            </Heading>
           </Flex>
           <Box>
             <Flex
@@ -172,20 +178,20 @@ export default function Home() {
               mt="10%"
             >
               <Box flex="1">
-                <Text
-                  fontSize="4vw"
-                  fontWeight="extrabold"
+                <Heading
+                  fontSize="5vw"
+                  fontWeight="medium"
                   lineHeight="0.9"
                   color="#E3C993"
                 >
                   NO SUGAR <br />
                   ADDED
-                </Text>
+                </Heading>
               </Box>
               <Box flex="1">
-                <Text
-                  fontSize="4vw"
-                  fontWeight="extrabold"
+                <Heading
+                  fontSize="5vw"
+                  fontWeight="medium"
                   lineHeight="0.9"
                   color="#E3C993"
                 >
@@ -193,19 +199,19 @@ export default function Home() {
                   ARTIFICIAL <br />
                   COLOUR & <br />
                   FALVOURS
-                </Text>
+                </Heading>
               </Box>
               <Box flex="1">
-                <Text
-                  fontSize="4vw"
-                  fontWeight="extrabold"
+                <Heading
+                  fontSize="5vw"
+                  fontWeight="medium"
                   lineHeight="0.9"
                   color="#E3C993"
                 >
                   USE REFINED <br />
                   COCONUT <br />
                   OIL
-                </Text>
+                </Heading>
               </Box>
             </Flex>
           </Box>
@@ -217,16 +223,16 @@ export default function Home() {
               mt="10%"
             >
               <Box flex="1">
-                <Text
+                <Heading
                   fontSize="6vw"
-                  fontWeight="extrabold"
+                  fontWeight="medium"
                   lineHeight="0.9"
                   color="#E5DFC7"
                 >
                   SELL IT <br />
                   WITH YOUR <br />
                   OWN BRAND
-                </Text>
+                </Heading>
                 <Button
                   mt="40px"
                   variant="solid"
@@ -235,52 +241,66 @@ export default function Home() {
                   _hover={{ bg: "#d0c3a9" }}
                   borderRadius="full"
                 >
-                  Request Sample
+                  <Text fontWeight="medium">Request Sample</Text>
                 </Button>
               </Box>
-              <Box flex="1">
-                <AspectRatio maxW="523px" ratio={4 / 3}>
-                  <iframe
-                    title="naruto"
-                    src="https://www.youtube.com/embed/QhBnZ6NPOY0"
-                    allowFullScreen
-                  />
-                </AspectRatio>
+              <Box flex="1" display="flex" alignItems="center" justifyContent="center">
+                <Image
+                  src="/assets/photo1.png"
+                  alt="Deskripsi Gambar"
+                  // position="absolute"
+                  // top={0}
+                  // left={-420}
+                  // zIndex={10}
+                  width="72%"
+                  height="auto"
+                />
               </Box>
             </Flex>
           </Box>
           <Box>
             <HStack spacing="30px" justify="center" mt="10%">
-              <Text
+              <Heading
                 flex="1"
                 fontSize="2vw"
-                fontWeight="extrabold"
+                fontWeight="medium"
                 lineHeight="0.9"
                 color="#E3C993"
                 textAlign="right"
               >
                 INSTAGRAM <br />
                 hello@retrux.com
-              </Text>
-              <Text
+              </Heading>
+              <Heading
                 flex="1"
                 fontSize="2vw"
-                fontWeight="extrabold"
+                fontWeight="medium"
                 lineHeight="0.9"
                 color="#E3C993"
               >
                 TIKTOK <br />
                 +6285102345
-              </Text>
+              </Heading>
             </HStack>
           </Box>
-          <VStack py="10%" alignItems="start" justifyContent="start">
-            <Text fontSize="24vw" lineHeight="0.9" fontWeight="extrabold" color="#E3C993">
+          <VStack py="10%" flex="1" display="flex" alignItems="center" justifyContent="center">
+            <Heading
+              fontSize="28vw"
+              lineHeight="0.9"
+              fontWeight="medium"
+              color="#E3C993"
+            >
               CHIPSY
-            </Text>
-            <Text fontSize="24vw" lineHeight="0.9" fontWeight="extrabold" transform="rotate(-6deg)" color="#E3C993">
+            </Heading>
+            <Heading
+              fontSize="28vw"
+              lineHeight="0.9"
+              fontWeight="medium"
+              transform="rotate(-6deg)"
+              color="#E3C993"
+            >
               CHIPS
-            </Text>
+            </Heading>
           </VStack>
         </Box>
       </>
