@@ -15,6 +15,7 @@ import {
 import Lenis from "lenis";
 import { useEffect } from "react";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 import theme from "@/constants/theme";
 
 export default function Home() {
@@ -244,10 +245,15 @@ export default function Home() {
                   <Text fontWeight="medium">Request Sample</Text>
                 </Button>
               </Box>
-              <Box flex="1" display="flex" alignItems="center" justifyContent="center">
+              <Box
+                flex="1"
+                display="flex"
+                alignItems="center"
+                justifyContent="center"
+              >
                 <Image
                   src="/assets/photo1.png"
-                  alt="Deskripsi Gambar"
+                  alt=""
                   // position="absolute"
                   // top={0}
                   // left={-420}
@@ -260,30 +266,54 @@ export default function Home() {
           </Box>
           <Box>
             <HStack spacing="30px" justify="center" mt="10%">
-              <Heading
-                flex="1"
-                fontSize="2vw"
-                fontWeight="medium"
-                lineHeight="0.9"
-                color="#E3C993"
-                textAlign="right"
-              >
-                INSTAGRAM <br />
-                hello@retrux.com
-              </Heading>
-              <Heading
-                flex="1"
-                fontSize="2vw"
-                fontWeight="medium"
-                lineHeight="0.9"
-                color="#E3C993"
-              >
-                TIKTOK <br />
-                +6285102345
-              </Heading>
+              <VStack alignItems="flex-end">
+                <Text
+                  fontWeight="normal"
+                  fontSize="1vw"
+                  lineHeight="1"
+                  color="#E3C993"
+                >
+                  Instagram
+                </Text>
+                <Heading
+                  flex="1"
+                  fontSize="2vw"
+                  fontWeight="medium"
+                  lineHeight="0.9"
+                  color="#E3C993"
+                  textAlign="right"
+                >
+                  hello@retrux.com
+                </Heading>
+              </VStack>
+              <VStack alignItems="right">
+                <Text
+                  fontWeight="normal"
+                  fontSize="1vw"
+                  lineHeight="1"
+                  color="#E3C993"
+                >
+                  TikTok
+                </Text>
+                <Heading
+                  flex="1"
+                  fontSize="2vw"
+                  fontWeight="medium"
+                  lineHeight="0.9"
+                  color="#E3C993"
+                >
+                  +6285102345
+                </Heading>
+              </VStack>
             </HStack>
           </Box>
-          <VStack py="10%" flex="1" display="flex" alignItems="center" justifyContent="center">
+          <VStack
+            py="10%"
+            flex="1"
+            display="flex"
+            alignItems="center"
+            justifyContent="center"
+          >
             <Heading
               fontSize="28vw"
               lineHeight="0.9"
@@ -292,16 +322,35 @@ export default function Home() {
             >
               CHIPSY
             </Heading>
-            <Heading
-              fontSize="28vw"
-              lineHeight="0.9"
-              fontWeight="medium"
-              transform="rotate(-6deg)"
-              color="#E3C993"
-            >
-              CHIPS
-            </Heading>
+            <HStack alignItems="start">
+              <Heading
+                fontSize="28vw"
+                lineHeight="0.9"
+                fontWeight="medium"
+                transform="rotate(-6deg)"
+                color="#E3C993"
+              >
+                CHIPS
+              </Heading>
+              <VStack alignItems="start" justifyContent="start">
+                <Image
+                  src="/assets/vector-chips1.png"
+                  alt=""
+                  zIndex="100"
+                  ps="8vw"
+                />
+                <Image src="/assets/vector-chips2.png" alt="" zIndex="100" />
+                <Image
+                  src="/assets/vector-chips3.png"
+                  alt=""
+                  zIndex="100"
+                  pt="4vw"
+                  ps="2vw"
+                />
+              </VStack>
+            </HStack>
           </VStack>
+          <Footer />
         </Box>
       </>
     </ChakraProvider>

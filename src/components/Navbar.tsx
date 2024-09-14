@@ -9,6 +9,7 @@ const Navbar = () => {
       zIndex="1000"
       bg="transparent"
       p={4}
+      w="100%"
     >
       <Flex alignItems="flex-start">
         <Image src="assets/logo.png" alt="Chipsy Chips" />
