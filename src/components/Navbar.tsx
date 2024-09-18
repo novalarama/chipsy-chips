@@ -12,7 +12,7 @@ const Navbar = () => {
       w="100%"
     >
       <Flex alignItems="flex-start">
-        <Image src="assets/logo.png" alt="Chipsy Chips" />
+        <Image src="assets/logo.png" w="4vw" alt="Chipsy Chips" />
 
         <Spacer />
 
