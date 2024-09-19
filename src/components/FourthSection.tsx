@@ -5,7 +5,7 @@ export default function FourthSection() {
   return (
     <Box>
       <Flex flexDir="row" alignItems="center" justifyContent="center" mt="10%">
-        <Box flex="1" bgColor="blue">
+        <Box flex="1">
           <motion.div
             whileInView={{ scale: 1.2, originX: 0 }}
             initial={{ scale: 1 }}
